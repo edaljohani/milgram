@@ -1,7 +1,7 @@
 // Start the game by navigating to the Twine HTML file
 document.getElementById("start-game").addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "DrMilgram.html";  // Make sure the Twine file path is correct
+    window.location.href = "story.html";  // Make sure the Twine file path is correct
 });
 
 // Options button logic
