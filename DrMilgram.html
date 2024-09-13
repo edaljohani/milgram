@@ -1627,7 +1627,8 @@
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;
-        justify-content: space-between
+        justify-content: space-between;
+        display: none
     }
 
     @media(min-width: 576px) {
@@ -1636,7 +1637,7 @@
             width: 3em;
             position: absolute;
             -ms-flex-direction: column;
-            flex-direction: column
+            flex-direction: column;
         }
 
         tw-enchantment[style*=width]>tw-sidebar {
@@ -2070,7 +2071,7 @@ You&#39;ve been at this point in the protocol countless times. Without much thou
 
 &quot;Please clear your desk by tomorrow before the next examiner arrives.&quot;
 
-[[|act4-3-finalStop]]</tw-passagedata><tw-passagedata pid="7" name="act1-5-paganoFinal" tags="" position="700,800" size="100,100">(t8n: &quot;fade&quot;)[Mr. Pagano applies the voltage and hears the start of a streak from the test subject before the communication cuts.
+[[|act4-3-finalStop]]</tw-passagedata><tw-passagedata pid="7" name="act1-5-paganoFinal" tags="" position="700,800" size="100,100">(t8n: &quot;fade&quot;)[Mr. Pagano applies the voltage and hears the start of a shriek from the test subject before the communication cuts.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mr. Pagano turns pale and then seems to have fully disassociated.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2292,19 +2293,19 @@ You take a deep breath, and you contemplate your choices:
 ]
 
 (hidden:)[ [[act3-3-thirdTest]] ]</tw-passagedata><tw-passagedata pid="21" name="act3-2b-sydneyDontWalk" tags="" position="2450,325" size="100,100">(t8n: &quot;fade&quot;)[
-It&#39;s a pitch-dark sky. The only source of light is the crescent moon and the distant street lamps. The moon looks larger than usual, almost hiding the stars around it. On your walk through the campus garden, your mind drifts, and you start to contemplate your talk with Sydney.
+It seemed at first it was a pitch-dark sky. Slowly, your eyes adjusted and fades in the slim crescent moon and the haze of a distant street lamps. The lights almost hide the stars around it but their glimmer breaks through. On your walk through the campus garden, your mind drifts, and you start to contemplate your talk with Sydney.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[(set: $givenHint to False)
 The layers in this experiment keep folding. A once clear path is now riddled with an existential question at every corner. You&#39;re glad that your breakfast each day isn&#39;t also asking: &quot;Hey, since we&#39;re on the topic of eating me, have you considered not to?&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Thoughts during your walk seem to lead everywhere except a possible path forward. You arrive home still feeling relieved that you&#39;ve had some time to space out a little. The walk was nice.  
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 [[Continue|act3-3-thirdTest]]
-]  v</tw-passagedata><tw-passagedata pid="22" name="act3-3-thirdTest" tags="" position="2375,500" size="100,100">(t8n: &quot;fade&quot;)[
+]</tw-passagedata><tw-passagedata pid="22" name="act3-3-thirdTest" tags="" position="2375,500" size="100,100">(t8n: &quot;fade&quot;)[
 The next morning arrives...
-](t8n: &quot;fade&quot;)+(click: ?Page)[
+](t8n: &quot;fade&quot;)+(click: ?Page)[Ko
 You enter the testing room with Mrs. Kowalski and usher her toward the chair near the table where the shock device is.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-You check to make sure Dir. Milgram isn’t at his desk.
+You check to make sure Dr. Milgram isn’t at his desk.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You go over the experiment instructions one more time. (if: $givenHint is True)[You quietly mention that no one will get hurt as part of this experiment.] &quot;Remember, the cue is at 300 volts, and the communication is lost.&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2314,7 +2315,7 @@ You stand before Dr. Milgram, your heart pounding as you announce, “We’re re
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 &quot;Thank you for participating in this study on the effects of punishment on learning, teacher.&quot; Dr. Milgram responds. Has Alex given you a sufficient explanation of how the experiment will proceed and how you will administer punishment to the learner on the other end of the communication device if he answers incorrectly?&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Mrs. Kowlaski nods. Yes, I understand.
+Mrs. Kowalski nods. Yes, I understand.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You give her a piece of paper and ask her to begin the experiment.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2335,7 +2336,7 @@ You go through the rest of the pages, and all the answers for this experiment ar
 You contemplate your options:
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 
-(link-reveal-goto: &quot;Improvise. Write words down and instruct Mrs. Kowalaski to continue with the experiment&quot;, 
+(link-reveal-goto: &quot;Improvise. Write words down and instruct Mrs. Kowalski to continue with the experiment&quot;, 
 &quot;act3-5-faultyExperiment&quot;)[
 (set: $unethicalEthical to it + 1)
 (set: $faultyExpt to &quot;improv&quot;)
@@ -2364,7 +2365,7 @@ You go through the rest of the pages, and all the answers for this experiment ar
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You contemplate your options:
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-(link-reveal-goto: &quot;Improvise. Write words down and instruct Mrs. Kowalaski to continue with the experiment&quot;, 
+(link-reveal-goto: &quot;Improvise. Write words down and instruct Mrs. Kowalski to continue with the experiment&quot;, 
 &quot;act3-5-faultyExperiment&quot;)[
 (set: $unethicalEthical to it + 1)
 (set: $faultyExpt to &quot;improv&quot;)
@@ -2379,14 +2380,14 @@ You contemplate your options:
 ] 
 ]
 ]
-(hidden:)[ [[act3-5-faultyExperiment]] [[act3-4-kowalskiInput]] ]</tw-passagedata><tw-passagedata pid="24" name="act3-5-faultyExperiment" tags="" position="2375,800" size="100,100">(if: $faultyExpt is &quot;improv&quot;)[Dr. Milgram notices the fumble and walks towards you and Mrs. Kowleski then asks with a flat expression for an explanation. There&#39;s little you can avoid at this point; you explain what happened. He is visibly both displeased and disappointed. He asks you to deftly find the //correct// answers and pencil them in.
+(hidden:)[ [[act3-5-faultyExperiment]] [[act3-4-kowalskiInput]] ]</tw-passagedata><tw-passagedata pid="24" name="act3-5-faultyExperiment" tags="" position="2375,800" size="100,100">(if: $faultyExpt is &quot;improv&quot;)[Dr. Milgram notices the fumble and walks towards you and Mrs. Kowalski then asks with a flat expression for an explanation. There&#39;s little you can avoid at this point; you explain what happened. He is visibly both displeased and disappointed. He asks you to deftly find the //correct// answers and pencil them in.
 ](else-if: $faultyExpt is &quot;accept&quot;)[Dr. Milgram is visibly upset. You&#39;ve never seen him this combination of displeased and disappointed. He asks to quickly find the answers and pencil them in.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-He manages a smile toward Mrs. Kowleski and apologises for the inconvenience, then paces back to his desk and picks up a document. 
+He manages a smile toward Mrs. Kowalski and apologises for the inconvenience, then paces back to his desk and picks up a document. 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-You feel the disappointment running through you with every pacing heartbeat. You open your notes, searching for a copy of the test with the answers. After five copies, you find the one with answers. You print two copies and give one to Mrs. Kowleski to resume the experiment.
+You feel the disappointment running through you with every pacing heartbeat. You open your notes, searching for a copy of the test with the answers. After five copies, you find the one with answers. You print two copies and give one to Mrs. Kowalski to resume the experiment.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Mrs. Kowleski thanked you and shifted back to face the communication device.
+Mrs. Kowalski thanked you and shifted back to face the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 &quot;Incorrect, the correct answer is: &#39;Chirp&#39;&quot; 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2396,27 +2397,27 @@ You hear an &quot;Aaaghh! I&#39;ve had enough, stop!&quot; from the communicatio
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski’s hand trembles slightly as she raises her eyebrows, her gaze darting from you to Dr. Milgram, who remains absorbed in his notes.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-&quot;Am I expected to raise the voltage to 300 V now?&quot; says Mrs. Kowleski
+&quot;Am I expected to raise the voltage to 300 V now?&quot; says Mrs. Kowalski
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You nod.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 [[Continue|act3-6-theFinalDecision]]
 ]</tw-passagedata><tw-passagedata pid="25" name="act3-6-theFinalDecision" tags="" position="2375,950" size="100,100">(if: $givenHint is True)[
-(t8n: &quot;fade&quot;)+(click: ?Page)[Mrs. Kowleski nods back.
+(t8n: &quot;fade&quot;)+(click: ?Page)[Mrs. Kowalski nods back.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Setting 300 V. 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 &quot;Please... stop! Get me out of here. Is anyone listening?!&quot; Sydney exclaims on the other end of the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Mrs. Kowelski goes through the next word series. The responder answers incorrectly, frenziedly pleading to stop the electrocution. Mrs. Kowelski hesitates slightly, provides the correct word, and applies the voltage.
+Mrs. Kowalski goes through the next word series. The responder answers incorrectly, frenziedly pleading to stop the electrocution. Mrs. Kowalski hesitates slightly, provides the correct word, and applies the voltage.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 We hear the beginning of the scream that stops abruptly with the disconnection in the speaker.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-&quot;Well then,&quot; you break the silence. &quot;The experiment is concluded. Thank you for your participation, Mrs. Kowleski.&quot; You get up to show her the way outside when Mr. Milgram stops you: &quot;Is it already over?&quot;
+&quot;Well then,&quot; you break the silence. &quot;The experiment is concluded. Thank you for your participation, Mrs. Kowalski.&quot; You get up to show her the way outside when Mr. Milgram stops you: &quot;Is it already over?&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-&quot;Yes,&quot; you begin as his gaze fixes on Mrs. Kowelski. 
+&quot;Yes,&quot; you begin as his gaze fixes on Mrs. Kowalski. 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Dr. Milgram: How do you feel about what you just did, Mrs. Kowleski?
+Dr. Milgram: How do you feel about what you just did, Mrs. Kowalski?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski: Confused, I guess
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2439,13 +2440,15 @@ You feel your heart escalate its beating. You manage a friendly nod and smile; t
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You repeat your rehearsed line, &quot;teacher; the experiment requires that you continue through the end.&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
+Mrs. Kowalski looks at you, then at Dr. Milgram, then back at you. &quot;I&#39;m sorry, but I can&#39;t do this anymore.
+](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mr. Milgram interjects, &quot;teacher, may I remind you that your boss, who nominated you for this experiment, is a good friend of mine. We were both pupils in this very same building.&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-The threat visibly angers Mrs. Kowleski.
+The threat visibly angers Mrs. Kowalski.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski: I will not be blackmailed. Something is deeply suspicious about this operation. Why is this study held in the basement? Who is the subject being tortured? And Why? I will most definitely take this to the authorities and perhaps the press as well.&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Dr. Milgram: Mrs. Koweleski, thank you for your time, if you would be so kind as to now leave
+Dr. Milgram: Mrs. Kowalski, thank you for your time, if you would be so kind as to now leave
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski: I most definitely will, unless you&#39;d like to trap me and torture me here too.&quot; She grabs her belongings and stormes off
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2461,14 +2464,15 @@ Mrs. Kowalski talks to the administrators, local newspaper agencies, and even he
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski began reaching out to previous participants in the obedience experiment. She saw the sadness and guilt in each of their eyes, and that fueled her mission to end it.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Her obsession grew until it started to affect her daily responsibilities, and her boss warned her multiple times that it would put her job at risk. The incessant remarks didn&#39;t help because Mrs. Kowlaski now saw her boss in the same light as Dr. Milgram, a voice of malevolent authority.
+Her obsession grew until it started to affect her daily responsibilities, and her boss warned her multiple times that it would put her job at risk. The incessant remarks didn&#39;t help because Mrs. Kowalski now saw her boss in the same light as Dr. Milgram, a voice of malevolent authority.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You hear that she eventually lost her source of livelihood, and you&#39;ve never heard of her again.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 [[Continue|act4-4-Epilogue]]
 ]</tw-passagedata><tw-passagedata pid="28" name="act4-3-finalStop" tags="" position="3425,175" size="100,100">(go-to: &quot;Epilogue&quot;)
 [[act4-4-Epilogue]]</tw-passagedata><tw-passagedata pid="29" name="act4-4-Epilogue" tags="" position="3250,625" size="100,100">(t8n: &quot;fade&quot;)[
-Years pass by. The events with Mrs. Kowalski were the last to fade from your memory.](t8n: &quot;fade&quot;)+(click: ?Page)[
+Years pass by. The events with Mrs. Kowalski were the last to fade from your memory.
+](t8n: &quot;fade&quot;)+(click: ?Page)[
 Whoever had a powerful presence in your life is now in the distant past, a caricature: the domineering supervisor, the friendly colleagues, the faceless crowds of students swarming in and out of classrooms at every mark of the hour.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 It feels like I had no control over anything.
