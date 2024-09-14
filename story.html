@@ -2130,7 +2130,7 @@ Dr. Milgram: What do you mean, &quot;stop?&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: I mean, discontinue the experiment. We must have enough data by now for something statistically significant. Can’t we just use what we’ve got and stop putting people through this… ordeal?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Dr. Milgram: Is that really what you think, Alex? That we’re just looking for publications?
+Dr. Milgram: Is that really what you think, Alex? That we’re just looking to publish?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: ...
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2244,7 +2244,7 @@ Sydney: I think you&#39;re right, though. I didn&#39;t think much of it at the t
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: How do you mean?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Sydney: I mean it&#39;s tough for me to say, being in a different room and all. So I don&#39;t see how the subjects feel about their actions. In fact, most of the time, I start to have feelings of loathing towards them and wish them hurtful things in reaction to the imaginary harm they&#39;re inflicting on me. It doesn&#39;t make sense, I know. But one thing is for sure–I can see how //you// feel about it afterward. The emotional toll it takes on you–to put them through these experiments. Over the past few months, you&#39;ve become much less cheery and enthusiastic about life and your work. You sink into yourself a little each day. You used to be like this sharp knife eager to cut through the day. But with each passing day since the start of the experiments, you&#39;ve gotten duller bit by bit until you&#39;ve lost your sense of purpose. So, anyway, this is a long way of saying, I believe you.
+Sydney: I mean it&#39;s tough for me to say, being in a different room and all. So I don&#39;t see how the subjects feel about their actions. In fact, most of the time, I start to loath them and wish them hurtful things in reaction to the imaginary harm they&#39;re inflicting on me. It doesn&#39;t make sense, I know. But one thing is for sure–I can see how //you// feel about it afterward. The emotional toll it takes on you–to put them through these experiments. Over the past few months, you&#39;ve become much less cheery and enthusiastic about life and your work. You sink into yourself a little each day. You used to be like this sharp knife eager to cut through the day. But with each passing day since the start of the experiments, you&#39;ve gotten duller bit by bit until you&#39;ve lost your sense of purpose. So, anyway, this is a long way of saying, I believe you.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: I... I don&#39;t know what to do. It feels like I have to choose between my future and my humanity. Is this it? Everyone sells out, and you&#39;re either an idiot or a failure if you don&#39;t?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2389,18 +2389,18 @@ You contemplate your options:
 ]
 (hidden:)[ [[act3-5-faultyExperiment]] [[act3-4-kowalskiInput]] ]</tw-passagedata><tw-passagedata pid="24" name="act3-5-faultyExperiment" tags="" position="2375,800" size="100,100">(if: $faultyExpt is &quot;improv&quot;)[Dr. Milgram notices the fumble and walks towards you and Mrs. Kowalski then asks with a flat expression for an explanation. There&#39;s little you can avoid at this point; you explain what happened. He is visibly both displeased and disappointed. He asks you to deftly find the //correct// answers and pencil them in.
 ](else-if: $faultyExpt is &quot;accept&quot;)[Dr. Milgram is visibly upset. You&#39;ve never seen him this combination of displeased and disappointed. He asks to quickly find the answers and pencil them in.
-](else-if: $faultyExpt is &quot;reconstruct&quot;)[You manage to remember the answers fairly well; one word pulls another like a string of pearls. You become in tune with the questions to the point they start to make sense intuitively. Dr. Milgram noticies you near the subject and tries to confrunt you but you confidently handle it. He asks you get on with it and there are other subjects to tend to.
+](else-if: $faultyExpt is &quot;reconstruct&quot;)[You manage to remember the answers fairly well; one word pulls another like a string of pearls. You become in tune with the questions to the point they start to make sense intuitively. Dr. Milgram noticies you near the subject and tries to confront you but you confidently handle it. He asks you get on with it and there are other subjects to tend to.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 He manages a smile toward Mrs. Kowalski and apologises for the inconvenience, then paces back to his desk and picks up a document. 
-](t8n: &quot;fade&quot;)+(click: ?Page)[
-(if: $faultyExpt is &quot;reconstruct&quot;)[You feel his disappointment running through you with every pacing heartbeat](else:)[You sigh in relief and feel slightly empowered]. You open your notes, searching for a copy of the test with the answers. After five copies, you find the one with the correct answers and (if: $faultyExpt is &quot;reconstruct&quot;)[double check your work](else:)[print two copies and give one to Mrs. Kowalski].
-](t8n: &quot;fade&quot;)+(click: ?Page)[
+](t8n: "fade")+(click: ?Page)[
+(if: $faultyExpt is "reconstruct")[You sigh in relief and feel slightly empowered](else:)[You feel his disappointment running through you with every pacing heartbeat]. You open your notes, searching for a copy of the test with the answers. After five copies, you find the one with the correct answers and (if: $faultyExpt is "reconstruct")[double check your work](else:)[print two copies and give one to Mrs. Kowalski].
+](t8n: "fade")+(click: ?Page)[
 Mrs. Kowalski thanked you and shifted back to face the communication device.
-](t8n: &quot;fade&quot;)+(click: ?Page)[
-&quot;Incorrect, the correct answer is: &#39;Chirp&#39;&quot; 
-](t8n: &quot;fade&quot;)+(click: ?Page)[
-&quot;Setting shock value to 200 V, and applying voltage&quot;
-](t8n: &quot;fade&quot;)+(click: ?Page)[
+](t8n: "fade")+(click: ?Page)[
+(if: (lowercase: $userInput)  is "chirp")[Mrs. Kowalski: the answer... is correct.](else:)["$userInput is incorrect. The correct answer is: //Chirp//".]
+](t8n: "fade")+(click: ?Page)[
+(if: (lowercase: $userInput) is "Chirp")[You realize now that you must've given Sydney the correct answer sheet. You resist the temptation to bring your palm to your face and bite your lip instead. You kindly request Mrs. Kowleski to move to the next question. Meanwhile you dart to the subject room to give Sydney the subject sheet. Everything seems to have gone smoothly from here, until...](else:)[Mrs. Kowleski begins to set the shock value to 200 volts, and applies it.]
+](t8n: "fade")+(click: ?Page)[
 You hear an &quot;Aaaghh! I&#39;ve had enough, stop!&quot; from the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski’s hand trembles slightly as she raises her eyebrows, her gaze darting from you to Dr. Milgram, who remains absorbed in his notes.
@@ -2413,7 +2413,7 @@ You nod.
 ]</tw-passagedata><tw-passagedata pid="25" name="act3-6-theFinalDecision" tags="" position="2375,950" size="100,100">(if: $givenHint is True)[
 (t8n: &quot;fade&quot;)+(click: ?Page)[Mrs. Kowalski nods back.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Setting 300 V. 
+Setting 300 volts. 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 &quot;Please... stop! Get me out of here. Is anyone listening?!&quot; Sydney exclaims on the other end of the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
