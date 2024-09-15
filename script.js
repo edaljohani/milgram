@@ -65,3 +65,21 @@ document.getElementById("exit").addEventListener("click", function (event) {
     alert("Exiting the game...");
     // Add code to handle game exit if necessary
 });
+
+// const imageElement = document.getElementById("chair-animated");
+
+// // Function to generate a random number between 1 and 6
+// function getRandomImage() {
+// const randomNumber = Math.floor(Math.random() * 6) + 1; // Generates a number between 1 and 6
+// return `artwork/${randomNumber}_nobkgrnd.png`; // Returns the corresponding image filename
+// }
+
+// // Add event listeners for hover
+// imageElement.addEventListener('mouseenter', function() {
+// imageElement.src = getRandomImage(); // Change to a random image on hover
+// });
+
+// imageElement.addEventListener('mouseleave', function() {
+// imageElement.src = 'chair-static-nobkgrnd.png'; // Optionally reset to the original image when hover ends
+// });
+

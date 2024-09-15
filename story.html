@@ -2122,7 +2122,7 @@ Dr. Milgram: What are you suggesting, Alex?
 ](t8n-arrive: &quot;fade&quot;)+(click: ?Page)[
 [[I guess I&#39;m suggesting that we stop the experiment|act2-2-suggestStop]]
 
-[[I&#39;m not sure...|act2-2b-milgramNotSure]]
+[[I&#39;m not sure, but it doesn't feel right to continue as is|act2-2b-milgramNotSure]]
 ]</tw-passagedata><tw-passagedata pid="10" name="act2-2-suggestStop" tags="" position="1250,475" size="100,100">(set: $conflictAction to &quot;suggesting to stop the experiment&quot;)
 (t8n: &quot;fade&quot;)[...]
 (t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2130,7 +2130,7 @@ Dr. Milgram: What do you mean, &quot;stop?&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: I mean, discontinue the experiment. We must have enough data by now for something statistically significant. Can’t we just use what we’ve got and stop putting people through this… ordeal?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Dr. Milgram: Is that really what you think, Alex? That we’re just looking to publish?
+Dr. Milgram: Is that really what you think, Alex? That we’re just chasing publications?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: ...
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2146,7 +2146,7 @@ You: For me?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Dr. Milgram: Yes, for you. For both of us. I think you know what I mean.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-//(You look away in discomfort)//
+//(You look away)//
 ](t8n: &quot;fade&quot;)+(click: ?Page)[ 
 Dr. Milgram: Look, I’ll grant you this. What we’re doing here with our subjects may bear some resemblance to Mr. Eichmann’s position, but you at least should have no misconceptions of what we do with //our// daily quota. We give them a chance to say no. We allow them to resist the commands of a malevolent authority and ally themselves with morality. 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2220,7 +2220,7 @@ You take the win. A slight sense of pride in your actions leaks through your exp
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You replay all the scenarios in your head. What if you attempted different choices, spoke different words, or took different paths? You weigh the consequences of each in your head, but it grows out of control. When you try to brush it off and look forward, every new thought pulls you backward.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-You begin to contemplate whether any of it was in your control. Or are you just another cog in the machine, unable to resist the pressures of a converging path? You’ve always believed in the power of choice, so you&#39;ve become interested in the human psychology. But now you’re beginning to wonder if it&#39;s just an illusion, a convenient story we&#39;ve told ourselves.
+You begin to contemplate whether any of it was in your control. Or are you just another cog in the machine, unable to resist the pressures of a converging path You’ve always believed in the power of choice, so you&#39;ve become interested in the human psychology. But now you’re beginning to wonder if it&#39;s just an illusion, a convenient story we&#39;ve told ourselves.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 The rest of your day fades from your consciousness, and the familiar routine takes the driving seat.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2265,13 +2265,14 @@ You contemplate for a moment.
 (hidden:)[ [[act3-2-sydneyWalk]] ]</tw-passagedata><tw-passagedata pid="20" name="act3-2-sydneyWalk" tags="" position="2250,325" size="100,100">(t8n: &quot;fade&quot;)+(click: ?Page)[
 &quot;... So, that way, you&#39;ll get your point across, and it will go unnoticed.&quot;
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-You: You&#39;re saying that if we let the subjects know ahead of the experiment that it&#39;s fake, we might prevent their total psychological turmoil, and Dr. Milgram won&#39;t know. But that will completely change the outcome of the experiment.
+You: You&#39;re saying that if we let the subjects know ahead of the experiment that it&#39;s staged, we might prevent their total psychological turmoil, and Dr. Milgram won&#39;t know. But that will completely change the outcome of the experiment.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[(set: $givenHint to False)
 Sydney: Not tell them, but nudge them a little, hint by saying that &quot;nothing bad will happen during the experiment&quot; without giving more details. Also, it&#39;s not like Dr. Milgram isn&#39;t already influencing the experiment&#39;s result by forcing the subjects to go through with it–through you. &quot;It&#39;s important that you continue the experiment through to the end.&quot;? The obsession with following protocols? The experiment was decided in his head before it even started. Don&#39;t you see that?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You: I guess...
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You take a deep breath, and you contemplate your choices:
+](t8n: &quot;fade&quot;)+(click: ?Page)[
 (link-reveal-goto: &quot;Hint to the subjects they are in a simulation, and risk sabotaging the experiment&quot;, 
 &quot;act3-3-thirdTest&quot;)[
 (set: $unethicalEthical to it + 1)
@@ -2399,7 +2400,7 @@ Mrs. Kowalski thanked you and shifted back to face the communication device.
 ](t8n: "fade")+(click: ?Page)[
 (if: (lowercase: $userInput)  is "chirp")[Mrs. Kowalski: the answer... is correct.](else:)["$userInput is incorrect. The correct answer is: //Chirp//".]
 ](t8n: "fade")+(click: ?Page)[
-(if: (lowercase: $userInput) is "Chirp")[You realize now that you must've given Sydney the correct answer sheet. You resist the temptation to bring your palm to your face and bite your lip instead. You kindly request Mrs. Kowleski to move to the next question. Meanwhile you dart to the subject room to give Sydney the subject sheet. Everything seems to have gone smoothly from here, until...](else:)[Mrs. Kowleski begins to set the shock value to 200 volts, and applies it.]
+(if: (lowercase: $userInput) is "chirp")[You realize now that you must've given Sydney the correct answer sheet. You resist the temptation to bring your palm to your face and bite your lip instead. You kindly request Mrs. Kowleski to move to the next question. Meanwhile you dart to the subject room to give Sydney the subject sheet. Everything seems to have gone smoothly from here, until...](else:)[Mrs. Kowleski begins to set the shock value to 200 volts, and applies it.]
 ](t8n: "fade")+(click: ?Page)[
 You hear an &quot;Aaaghh! I&#39;ve had enough, stop!&quot; from the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
