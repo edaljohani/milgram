@@ -21,8 +21,8 @@ body {
     /* Ensure the body is the reference for absolute positioning */
     overflow: hidden;
     /* Prevent scrollbars from appearing */
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Caveat', cursive; */
 }
 
 /* Start Menu Style */
