@@ -2535,7 +2535,7 @@ Yet most of it paled away; faded like bad makeup.
 All that&#39;s left are the stories I told myself about who I am
 ]
 
-(click: ?Page)[
+(click: ?Page)[(live: 1.5s)[
 (if: $success is (max: $sucess, $unethicalEthical, $balanced))[
 (go-to: &quot;end4 Successful Ending&quot;)
 ](else-if: $unethicalEthical is (max: $sucess, $unethicalEthical, $balanced))[
@@ -2543,7 +2543,7 @@ All that&#39;s left are the stories I told myself about who I am
 ](else-if: $balanced is (max: $sucess, $unethicalEthical, $balanced))[
 (go-to: &quot;end1 Balanced Ending&quot;)
 ]
-]
+(stop:)]]
 
 (hidden:)[
 &quot;End value of success: &quot; (print:  $success)
