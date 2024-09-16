@@ -1557,7 +1557,7 @@
         box-sizing: border-box;
         width: 100%;
         min-height: 100%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.5em;
         padding: 5% 5%;
         overflow: hidden;
@@ -1628,6 +1628,7 @@
         display: flex;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        display: none
     }
 
     @media(min-width: 576px) {
@@ -1999,24 +2000,28 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Switch Case.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Switch Case" startnode="34" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="38BCA61E-6DD1-4CA5-8BDC-969455868EB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Credits" tags="" position="3950,475" size="100,100">(t8n: &quot;fade&quot;)[
+<tw-storydata name="Switch Case" startnode="34" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="38BCA61E-6DD1-4CA5-8BDC-969455868EB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Credits" tags="" position="3950,475" size="100,100">(t8n: "fade")[
 Thank you so much for playing Switch Case
-](t8n: &quot;fade&quot;)+(click: ?Page)[
-Your choices will be saved and used to to train a moral machine](t8n: &quot;fade&quot;)+(click: ?Page)[... just kidding](t8n: &quot;fade&quot;)+(click: ?Page)[
-This game was created part the &lt;a href=&quot;https://www.faspe-ethics.org&quot;; target=&quot;_blank&quot;&gt;Fellowships at Auschwitz for the Study of Professional Ethics&lt;/a&gt;
-
-
-
+](t8n: "fade")+(click: ?Page)[
+Your choices will be saved and used to to train a moral machine](t8n: "fade")+(click: ?Page)[ ... just kidding
+](t8n: "fade")+(click: ?Page)[
+This game was created part the Fellowships at Auschwitz for the Study of Professional Ethics (FASPE)
+](t8n: "fade")+(click: ?Page)[
+Based on the screenplay, VOLT FACE, by Eric Muller
+](t8n: "fade")+(click: ?Page)[
 Created by Ebrahim Aljohani
+](t8n: "fade")+(click: ?Page)[
+Visit <a href="https://www.faspe-ethics.org" target="_blank">faspe-ethics.org</a> to learn more.
+For general inquiries: <a href="mailto:edaljohani@pm.me">edaljohani@pm.me</a>
 ]</tw-passagedata><tw-passagedata pid="2" name="act1-1-setting" tags="" position="700,200" size="100,100">It&#39;s 1961 in the dimly lit basement of Linsly-Chittenden Hall at Yale University. The air is thick, and the Gothic architecture looms over with sparsely placed stained glass. Here, Dr. Milgram is conducting an experiment to study obedience to authority. You, Alex, are a graduate student responsible for managing the logistics of the experiment and dealing with the subjects. However, you are becoming increasingly aware of the distress caused by the experiment.
 
 [[Continue|act1-2-paganoFirstTest]]</tw-passagedata><tw-passagedata pid="3" name="act1-2-paganoFirstTest" tags="" position="600,350" size="100,100">You are in the test room with Dr. Milgram and Mr. Pagano. Mr. Pagano is visibly distressed as he administers what he believes are real shocks to Sydney.
 
-(t8n: &quot;fade&quot;)+(link-replace: &quot;Continue&quot;)[Mr. Pagano: Camel; Dinghy; E-Van. What is the next word in the series?
+(t8n: &quot;fade&quot;)+(click: ?Page)[Mr. Pagano: Camel; Dinghy; E-Van. What is the next word in the series?
 (t8n: &quot;fade&quot;)+(click: ?Page)[
 Sydney: Bicycle
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Mr. Pragano: Incorrect. The Correct Answer is Ferry.
+Mr. Pragano: Incorrect. The Correct Answer is ''Ferry''.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mr. Pragano looks at you and asks if you are sure pressing this button is safe.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2056,7 +2061,7 @@ Mr. Pagano is somewhat comforted; You can suddenly sense Dr. Milgram&#39;s burni
 ](else-if: $firstReaction is &#39;follow&#39;)[
 Mr. Pagano becomes more distressed, but the experiment continues. Dr. Milgram is pleased with your compliance, but you feel increasingly uneasy.
 ](else-if: $firstReaction is &#39;intervene&#39;)[
-Mr. Pagano is confused by the sidebar and slowly realizing the air of seriousness.
+Mr. Pagano is confused by the sidebar and takes note of the air of seriousness that begins to fill the room.
 ](else-if: $firstReaction is &#39;reject&#39;)[
 You get scorched by the power Dr. Milgram holds over you. You brush it off but realize that, by now, Dr. Milgram is heavily doubtful of your loyalty. You sit and observe for now.
 ]](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2064,7 +2069,7 @@ Mr. Pagano: The next series is: When, What, Who. The final word is?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Sydney: Where
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-Mr. Pagano: That is incorrect. The answer is //&#39;&#39;Why&#39;&#39;//.
+Mr. Pagano: That is incorrect. The answer is &#39;&#39;Why&#39;&#39;.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mr. Pagano increases the voltage to 300 V. He hesitates and looks toward you. Are you sure this is a safe value?
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2339,7 +2344,6 @@ You go through the rest of the pages, and all the answers for this experiment ar
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You contemplate your options:
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-
 (link-reveal-goto: &quot;Improvise. Write words down and instruct Mrs. Kowalski to continue with the experiment&quot;, 
 &quot;act3-5-faultyExperiment&quot;)[
 (set: $unethicalEthical to it + 1)
@@ -2387,7 +2391,6 @@ You contemplate your options:
 (set: $faultyExpt to &quot;accept&quot;)
 ]
 
-
 (link-reveal-goto: &quot;Try to reconstruct answers from memory&quot;, 
 &quot;act3-5-faultyExperiment&quot;)[
 (set: $sucess to it + 1)
@@ -2407,7 +2410,7 @@ He manages a smile toward Mrs. Kowalski and apologizes for the inconvenience, th
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Mrs. Kowalski thanked you and shifted back to face the communication device.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-(if: (lowercase: $userInput)  is &quot;chirp&quot;)[Mrs. Kowalski: the answer... is correct.](else:)[&quot;$userInput is incorrect. The correct answer is: //Chirp//&quot;.]
+(if: (lowercase: $userInput)  is "chirp")[Mrs. Kowalski: the answer... is correct.](else:)["$userInput is incorrect," reads Mrs. Kowalski, "The correct answer is: ''Chirp''".]
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 (if: (lowercase: $userInput) is &quot;chirp&quot;)[You realize now that you must&#39;ve given Sydney the correct answer sheet. You resist the temptation to bring your palm to your face and bite your lip instead. You kindly request Mrs. Kowleski to move to the next question. Meanwhile, you dart to the subject room to give Sydney the subject sheet. Everything seems to have gone smoothly from here, until...](else:)[Mrs. Kowleski begins to set the shock value to 200 volts, and applies it.]
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2560,7 +2563,7 @@ Your career is not as glamorous, but you have a healthy balance and conscious.
 You and Sydney become very close friends.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 
-You are //content//.
+You are ... ][(t8n: "fade")+(click: ?Page)[//content//.]
 
 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2580,7 +2583,7 @@ You think of yourself as a vigilante, a hero in a broken system.
 You begin consulting for the government and learn to navigate it well. You are constantly commended for &quot;getting jobs done&quot; and have a wide-reaching network. You hope one day to be fully integrated into the system you disagree with to change it, and until then, you&#39;re faking it.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 
-You are //needed//.
+You are ... ][(t8n: "fade")+(click: ?Page)[//needed//.]
 
 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2602,7 +2605,7 @@ Your loving parents
 Your old friends who never left
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 
-You are //home//.
+You are ... ][(t8n: "fade")+(click: ?Page)[//home//.]
 
 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
@@ -2622,7 +2625,7 @@ By the time you graduate, you have more than 10,000 citations, and universities 
 Doors you didn&#39;t know existed open for you, and you realize that it might have come with human costs. You dedicate your career to scientific inquiry for the greater good.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 
-You have //made it//.
+You have ... ][(t8n: "fade")+(click: ?Page)[//made it//.]
 
 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
