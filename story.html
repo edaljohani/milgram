@@ -2002,10 +2002,19 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Switch Case.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Switch Case" startnode="34" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="38BCA61E-6DD1-4CA5-8BDC-969455868EB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Credits" tags="" position="3950,475" size="100,100">(t8n: "fade")[
-<script>
-    // Call this when player reaches the final passage
-    plausible("game_completed");
-</script>      
+    <script>
+        function waitForPlausible(callback) {
+          if (typeof plausible === "function") {
+            callback();
+          } else {
+            setTimeout(() => waitForPlausible(callback), 100);
+          }
+        }
+      
+        waitForPlausible(() => {
+          plausible("game_completed");
+        });
+      </script>          
 Thank you so much for playing Switch Case
 ](t8n: "fade")+(click: ?Page)[
 Your choices will be saved and used to to train a moral machine](t8n: "fade")+(click: ?Page)[ ... just kidding
