@@ -2012,7 +2012,7 @@
         }
       
         waitForPlausible(() => {
-          plausible("game_completed");
+          plausible("credits");
         });
       </script>          
 Thank you so much for playing Switch Case
@@ -2576,7 +2576,19 @@ Your career is not as glamorous, but you have a healthy balance and conscious.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You and Sydney become very close friends.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-
+<script>
+    function waitForPlausible(callback) {
+      if (typeof plausible === "function") {
+        callback();
+      } else {
+        setTimeout(() => waitForPlausible(callback), 100);
+      }
+    }
+  
+    waitForPlausible(() => {
+      plausible("balanced_ending");
+    });
+  </script>
 You are ... ][(t8n: "fade")+(click: ?Page)[//content//.]
 
 
@@ -2596,7 +2608,19 @@ You think of yourself as a vigilante, a hero in a broken system.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 You begin consulting for the government and learn to navigate it well. You are constantly commended for &quot;getting jobs done&quot; and have a wide-reaching network. You hope one day to be fully integrated into the system you disagree with to change it, and until then, you&#39;re faking it.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-
+<script>
+    function waitForPlausible(callback) {
+      if (typeof plausible === "function") {
+        callback();
+      } else {
+        setTimeout(() => waitForPlausible(callback), 100);
+      }
+    }
+  
+    waitForPlausible(() => {
+      plausible("unethical_ethical_ending");
+    });
+  </script>
 You are ... ][(t8n: "fade")+(click: ?Page)[//needed//.]
 
 
@@ -2618,7 +2642,19 @@ Your loving parents
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Your old friends who never left
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-
+<script>
+    function waitForPlausible(callback) {
+      if (typeof plausible === "function") {
+        callback();
+      } else {
+        setTimeout(() => waitForPlausible(callback), 100);
+      }
+    }
+  
+    waitForPlausible(() => {
+      plausible("dropout_ending");
+    });
+  </script>
 You are ... ][(t8n: "fade")+(click: ?Page)[//home//.]
 
 
@@ -2638,7 +2674,19 @@ By the time you graduate, you have more than 10,000 citations, and universities 
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
 Doors you didn&#39;t know existed open for you, and you realize that it might have come with human costs. You dedicate your career to scientific inquiry for the greater good.
 ](t8n: &quot;fade&quot;)+(click: ?Page)[
-
+<script>
+    function waitForPlausible(callback) {
+      if (typeof plausible === "function") {
+        callback();
+      } else {
+        setTimeout(() => waitForPlausible(callback), 100);
+      }
+    }
+  
+    waitForPlausible(() => {
+      plausible("successful_ending");
+    });
+  </script>
 You have ... ][(t8n: "fade")+(click: ?Page)[//made it//.]
 
 
